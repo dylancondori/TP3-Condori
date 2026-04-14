@@ -1,20 +1,25 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package tp3.condori_actividad_2;
-
-/**
- *
- * @author Admin
- */
+import java.util.Scanner;
 public class TP3Condori_Actividad_2 {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner na = new Scanner(System.in);
+        System.out.println("Ingrese un numero.");
+        int n = na.nextInt();
+        int contador1 = 1;
+        while(contador1 <= n){
+            System.out.println("Contador 1 = " + contador1);
+            contador1++;
+        }
+        System.out.println("-----------------");
+        int contador2 = 1;
+        do {            
+            System.out.println("contador 2 = " + contador2);
+            contador2++;
+        } while (contador2 <= n);
+        System.out.println("-----------------");
+        for(int c = 1; c <= n; c ++){
+            System.out.println("contador 3 = " + c);
+        }
     }
     
 }
